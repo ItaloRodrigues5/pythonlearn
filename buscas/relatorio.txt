@@ -1,0 +1,47 @@
+Busca Binária Ordenada:
+
+Tempo em pior caso: 0.008864 ms // 0.009330 ms
+Tempo em médio caso: 0.006532 ms // 0.007464 ms
+Tempo em melhor caso: 0.008864 ms // 0.010263 ms
+
+Busca Binária Desordenada:
+
+Tempo em pior caso: 0.009797 ms // 0.010263 ms // 0.010730 ms
+Tempo em médio caso: 0.009797 ms // 0.010263 ms // 0.014928 ms
+Tempo em melhor caso: 0.009331 ms // 0.010263 ms // 0.016328 ms
+
+Busca Sequencial Ordenada:
+
+Tempo em pior caso: 0.110097 ms
+Tempo em médio caso: 0.074176 ms
+Tempo em melhor caso: 0.004665 ms
+
+Busca Sequencial Desordenada:
+
+Tempo em pior caso: 0.105898 ms
+Tempo em médio caso: 0.098900 ms
+Tempo em melhor caso: 0.008863 ms
+
+Qual algoritmo teve o melhor desempenho em listas não ordenadas e por quê?
+
+R: O algoritmo que teve melhor desempenho em listas não ordenadas foi o de busca sequencial, pois de qualquer forma ele vai passar por cada elemento até encontrar o alvo desejado, ao contrário do busca binária que ele procura do meio para as extremidades, e como é uma lista ordenada ele vai sair saltando de um lado para o outro na lista em busca do valor causando um número de comparações maior que a busca sequencial.
+
+Qual algoritmo teve o melhor desempenho em listas ordenadas e por quê?
+
+R: O algoritmo que teve melhor desempenho em listas ordenadas foi o de busca binária, pois em uma lista ordenada ele tem mais precisão de busca já que inicia no meio e vai pegar uma parcela de elementos e fazer a comparação naquele conjunto até achar o alvo desejado. Diferente da busca sequencial que teria que passar por todos os elementos até achar o alvo desejado.
+
+Como o aumento do tamanho da lista impacta no tempo de execução de ambos os algoritmos?
+
+R: Para listas maiores, a busca sequencial não seria ideal para realizar a busca de um valor, pois acarretaria tempo já que ela terá que passar índice por índice até encontrar o alvo desejado, o que é diferente para a busca binária que funciona como uma espécie de filtro. Ela começa do centro e depois vai comparando para um dos lados da lista até encontrar o valor desejado, o que se torna mais rápido para listas grandes.
+Já para listas pequenas a busca sequencial é ideal, pois não demanda grandes buscas e comparações, além da simplicidade e eficiência na busca, o que é diferente para a binária já que ela é mais complexa e é mais utilizada para grandes buscas e comparações de elementos. O que acarretaria num tempo de execução maior do algoritmo.
+
+Comente sobre o comportamento de ambos os algoritmos em listas grandes e pequenas.
+
+R: Em listas grandes, a busca binária saiu em vantagem devido a grande demanda de elementos presentes e como ela tem um sistema de busca mais rápida que se inicia do centro para um dos lados dependendo se o valor é maior ou menos que o alvo desejado. Para listas pequenas a busca binária também é útil, mas se torna inviável devido a sua complexidade de busca e comparações, o que acarreta no tempo de execução do algoritmo.
+
+Em listas grandes, a busca sequencial saiu em desvantagem devido a grande demanda de elementos presentes e como ela precisa passar índice por índice se torna inviável a busca dependendo da posição do alvo desejado, o que acarreta numa complexidade e tempo de execução maior. Já para listas pequenas a busca sequencial saiu em vantagem por ser uma pequena demanda de valores, não requer uma complexidade de busca maior para achar o alvo desejado e encerrar a execução do algoritmo.
+
+Lembrando:
+
+Para listas ordenadas, tanto a busca sequencial como a binária são úteis, o que define é o tamanho da lista para qual das duas usar.
+Para listas desordenadas, a busca sequencial é mais eficiente que a binária, independente do tamanho da lista já que a sequencial passa por todos os valores até achar o alvo desejado. Para a busca binária, ela irá ficar saltando de um lado para o outro da lista até achar o alvo, o que se torna mais lento no tempo de execução do algoritmo.
